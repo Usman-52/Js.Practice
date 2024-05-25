@@ -1,2 +1,2 @@
 # Js.Practice
-JavaSript Practic Repo With full Explanation.
+JavaSript Practice Repo with Full Explanation.
