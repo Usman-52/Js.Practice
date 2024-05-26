@@ -34,4 +34,5 @@ alert('Alhamdulillah I am good , what about you usman?');
 //* ends with curly brackets "{}".
 
 //* what is Statement in Javascript?
-//* Statement in JavaScript point of view will contains values, operators, keywords, expression etc . practice
+//* Statement in JavaScript point of view will contains values, operators, keywords, expression etc .
+
