@@ -7,21 +7,21 @@
 //* Instruction:
 //* Write  a program that takes three  numbers as input and determines which one is the largest.
 
-// var firstNumber = +prompt("Enter your first number");
-// var secondNumber = +prompt("Enter your Second number");
-// var thirdNumber = +prompt("Enter your Third number");
+var firstNumber = +prompt("Enter your first number");
+var secondNumber = +prompt("Enter your Second number");
+var thirdNumber = +prompt("Enter your Third number");
 
-// if (firstNumber > secondNumber && firstNumber > thirdNumber){
-//     console.log("The number " + firstNumber + " is the largest number among them.");
-// }
+if (firstNumber > secondNumber && firstNumber > thirdNumber){
+    console.log("The number " + firstNumber + " is the largest number among them.");
+}
 
-// else if (secondNumber > firstNumber && secondNumber > thirdNumber){
-//     console.log("The  number " + secondNumber + " is the largest number among them.");
-// }
+else if (secondNumber > firstNumber && secondNumber > thirdNumber){
+    console.log("The  number " + secondNumber + " is the largest number among them.");
+}
 
-// else{
-//     console.log("The number " + thirdNumber + " is the largest number among them.");
-// }
+else{
+    console.log("The number " + thirdNumber + " is the largest number among them.");
+}
 
 
 //! 2). Grade classification
