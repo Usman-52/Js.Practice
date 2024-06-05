@@ -108,22 +108,107 @@
 
 //! Robot Chef:
 
-// let yourName = prompt("Hello Sir/MAM! would you like to tell me Your Name?");
-// let yourMood = prompt("What's going on today? Are you feeling happy, sad, or maybe just tired? Robot Chef can whip up something amazing based on your mood!");
+let yourName = prompt("Hello Sir/MAM! would you like to tell me Your Name?");
+let yourMood = prompt("What's going on today? Are you feeling happy, sad, or maybe just tired? Robot Chef can whip up something amazing based on your mood!");
 
-// switch (yourMood) {
-//     case "happy":
-//         console.log(`${yourName} Get ready for the Happy Feast! It's got tiny, super fresh Chicken krahi with special Lassi, and a super cold, creamy yogurt treat for the end – all to make you even happier!`);
+switch (yourMood) {
+    case "happy":
+        console.log(`${yourName} Get ready for the Happy Feast! It's got tiny, super fresh Chicken krahi with special Lassi, and a super cold, creamy yogurt treat for the end – all to make you even happier!`);
+        break;
+    case "sad":
+        console.log(`${yourName} Don't worry, Robot Chef is here to help! The Sad Feast is like a big hug in a bowl. It's got a warm, yummy broth that's good for your tummy, the fanciest kind of meat ever (grown in a lab!), and cookies printed by a special machine that will make you feel all happy inside!`);
+        break;
+    case "tired":
+        console.log(`${yourName} The Tired Feast is here to give you an energy boost! We've got a green drink full of good stuff, special tiny robots that will help you feel more awake, delicious energy bars, and even something to help you sleep soundly later – all in one meal!`);
+    default:
+        console.log("invalid option");
+        break;
+}
+
+//! Question 3: Month Name:
+//* INSTRUCTIONS:
+//*Use a switch statement to create a program that takes an integer month (1-12) representing the month of the year.
+//*The switch statement should print the corresponding month name (e.g., 1 for "January", 2 for "February", etc.).
+//*If the input is not in the range 1-12, print "Invalid month".
+
+// let enterNumber = +prompt("Enter the Your number , 1-12:");
+// switch (enterNumber) {
+//     case 1:
+//         console.log("January");
 //         break;
-//     case "sad":
-//         console.log(`${yourName} Don't worry, Robot Chef is here to help! The Sad Feast is like a big hug in a bowl. It's got a warm, yummy broth that's good for your tummy, the fanciest kind of meat ever (grown in a lab!), and cookies printed by a special machine that will make you feel all happy inside!`);
+//     case 2:
+//         console.log("February");
 //         break;
-//     case "tired":
-//         console.log(`${yourName} The Tired Feast is here to give you an energy boost! We've got a green drink full of good stuff, special tiny robots that will help you feel more awake, delicious energy bars, and even something to help you sleep soundly later – all in one meal!`);
+//     case 3:
+//         console.log("March");
+//         break;
+//     case 4:
+//         console.log("April");
+//         break;
+//     case 5:
+//         console.log("May");
+//         break;
+//     case 6:
+//         console.log("Jun");
+//         break;
+//     case 7:
+//         console.log("July");
+//         break;
+//     case 8:
+//         console.log("August");
+//         break;
+//     case 9:
+//         console.log("September");
+//         break;
+//     case 10:
+//         console.log("October");
+//         break;
+//     case 11:
+//         console.log("November");
+//         break;
+//     case 12:
+//         console.log("December");
+//         break;
 //     default:
-//         console.log("invalid option");
+//         console.log("invalid Month!");
 //         break;
 // }
+
+//! Simple Calculator:
+//*INSTRUCTIONS:
+//* Use a switch statement to create a program that takes three inputs: two numbers a and b, and a character operation which can be '+', '-', '*', or '/'.
+//* The switch statement should perform the corresponding arithmetic operation and print the result.
+//* If the operation is not one of the specified characters, print "Invalid operation".  
+
+// let a = +prompt("Enter the first Number:");
+// let operation = prompt("Perform any operation (+, -, *, /):");
+// let b = +prompt("Enter the second Number:");
+
+// switch (operation) {
+//     case "+":
+//         console.log(`The addition of ${a} and ${b} is: ${a + b}.`);
+//         break;
+//     case "-":
+//         console.log(`The subtraction of ${a} and ${b} is: ${a - b}. `);
+//         break;
+//     case "*":
+//         console.log(` ${a} Multiply by ${b} =: ${a * b}.`);
+//         break;
+//     case "/":
+//         if (b === 0){
+//             console.log("Sorry! you can't david number by Zero")
+//         }
+//         else{
+//             console.log(` ${a} divided by ${b} =: ${a / b}.`);
+//         }
+//         break;
+//     default:
+//         console.log("invalid operation");
+//         break;
+// }
+
+
+
 
 
 //! TERNARY OPERATORS OR CONDITIONAL OPERATOR
@@ -132,6 +217,6 @@
 
 //! simple Tip calculator
 
-// let bill = +prompt("What is you bill?");
-// let tip = bill >= 50  && bill <= 300 ? bill * 0.15 : bill * 0.2;
-// console.log(`The bill was at first: ${bill} The tip is ${tip} and the final bill is ${bill + tip}`);
+let bill = +prompt("What is you bill?");
+let tip = bill >= 50  && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was at first: ${bill} The tip is ${tip} and the final bill is ${bill + tip}`);
