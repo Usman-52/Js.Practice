@@ -1,3 +1,5 @@
+"use strict";
+
 //! Weather Forecasting Program.
 
 //* Instruction

@@ -1,3 +1,5 @@
+"use strict";
+
 //*  CHAPTER NO.13     TESTING SETS OF CONDITION
 
 //! PRACTICE EXAMPLES:
@@ -108,22 +110,22 @@
 
 //! Robot Chef:
 
-let yourName = prompt("Hello Sir/MAM! would you like to tell me Your Name?");
-let yourMood = prompt("What's going on today? Are you feeling happy, sad, or maybe just tired? Robot Chef can whip up something amazing based on your mood!");
+// let yourName = prompt("Hello Sir/MAM! would you like to tell me Your Name?");
+// let yourMood = prompt("What's going on today? Are you feeling happy, sad, or maybe just tired? Robot Chef can whip up something amazing based on your mood!");
 
-switch (yourMood) {
-    case "happy":
-        console.log(`${yourName} Get ready for the Happy Feast! It's got tiny, super fresh Chicken krahi with special Lassi, and a super cold, creamy yogurt treat for the end – all to make you even happier!`);
-        break;
-    case "sad":
-        console.log(`${yourName} Don't worry, Robot Chef is here to help! The Sad Feast is like a big hug in a bowl. It's got a warm, yummy broth that's good for your tummy, the fanciest kind of meat ever (grown in a lab!), and cookies printed by a special machine that will make you feel all happy inside!`);
-        break;
-    case "tired":
-        console.log(`${yourName} The Tired Feast is here to give you an energy boost! We've got a green drink full of good stuff, special tiny robots that will help you feel more awake, delicious energy bars, and even something to help you sleep soundly later – all in one meal!`);
-    default:
-        console.log("invalid option");
-        break;
-}
+// switch (yourMood) {
+//     case "happy":
+//         console.log(`${yourName} Get ready for the Happy Feast! It's got tiny, super fresh Chicken krahi with special Lassi, and a super cold, creamy yogurt treat for the end – all to make you even happier!`);
+//         break;
+//     case "sad":
+//         console.log(`${yourName} Don't worry, Robot Chef is here to help! The Sad Feast is like a big hug in a bowl. It's got a warm, yummy broth that's good for your tummy, the fanciest kind of meat ever (grown in a lab!), and cookies printed by a special machine that will make you feel all happy inside!`);
+//         break;
+//     case "tired":
+//         console.log(`${yourName} The Tired Feast is here to give you an energy boost! We've got a green drink full of good stuff, special tiny robots that will help you feel more awake, delicious energy bars, and even something to help you sleep soundly later – all in one meal!`);
+//     default:
+//         console.log("invalid option");
+//         break;
+// }
 
 //! Question 3: Month Name:
 //* INSTRUCTIONS:
@@ -217,6 +219,53 @@ switch (yourMood) {
 
 //! simple Tip calculator
 
-let bill = +prompt("What is you bill?");
-let tip = bill >= 50  && bill <= 300 ? bill * 0.15 : bill * 0.2;
-console.log(`The bill was at first: ${bill} The tip is ${tip} and the final bill is ${bill + tip}`);
+// let bill = +prompt("What is you bill?");
+// let tip = bill >= 50  && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// console.log(`The bill was at first: ${bill} The tip is ${tip} and the final bill is ${bill + tip}`);
+
+//! University of karachi Grade System:
+//* Using if else statement with multiple conditions.
+
+// var yourMarks = +prompt("Enter your  marks!");
+// if (yourMarks >= 90 && yourMarks <= 100){
+//     console.log(`congratulation for  your getting ${yourMarks} marks and you got A+ grade.`);
+//     alert("you got 4.0 GPA:");
+//     if (yourMarks > 100) {
+//        console.log("Sorry you have entered Invalid Number");
+//    }
+// }
+// else if (yourMarks >= 85 && yourMarks <= 89){
+//     console.log(`congratulation for  your getting ${yourMarks} marks and you got A grade.`);
+//     alert("you got 4.0 GPA");
+// }
+// else if (yourMarks >= 80 && yourMarks <= 84){
+//     console.log(`congratulation for  your getting ${yourMarks} marks and you got A- grade.`);
+//     alert("you got 3.8 GPA");
+// }
+// else if (yourMarks >= 75 && yourMarks <= 79){
+//     console.log(`congratulation for  your getting ${yourMarks} marks and you got B+ grade.`);
+//     alert("you got 3.4 GPA");
+// }
+// else if (yourMarks >= 71 && yourMarks <= 74){
+//     console.log(`congratulation for  your getting ${yourMarks} marks and you got B grade.`);
+//     alert("you got 3.0 GPA");
+// }
+// else if (yourMarks >= 68 && yourMarks <= 70){
+//     console.log(`congratulation for  your getting ${yourMarks} marks and you got B- grade.`);
+//     alert("you got 2.8 GPA");
+// }
+// else if (yourMarks >= 64 && yourMarks <= 67){
+//     console.log(`congratulation for  your getting ${yourMarks} marks and you got C+ grade.`);
+//     alert("you got 2.4 GPA");
+// }
+// else if (yourMarks >= 61 && yourMarks <= 63){
+//     console.log(`congratulation for  your getting ${yourMarks} marks and you got C grade.`);
+//     alert("you got 2.2 GPA ");
+// }
+// else if (yourMarks >= 55 && yourMarks <= 60){
+//     console.log(`you have go ${yourMarks} marks and your grade is D.`);
+//     alert("You got 2.2 GPA");
+// }
+// else{
+//     console.log("Sorry You are fail.");
+// }

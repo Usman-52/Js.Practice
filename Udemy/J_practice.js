@@ -83,3 +83,19 @@
 
 // let result = evenOrOdd(enteredNumber);
 // console.log(`The Number ${enteredNumber} is ${result}`);
+
+//! French fri Machine 
+
+// //* you will use function and calling function one function inside another function.
+// function potatoCuterMachine(potato){
+//     return potato * 10;
+// }
+
+
+// function numberOfPotato(potato){
+//     const potatoPieces = potatoCuterMachine(potato);
+//     const pieces = `the machine made ${potatoPieces} potato pieces`;
+//     return pieces;
+// }
+
+// console.log(numberOfPotato(1));
