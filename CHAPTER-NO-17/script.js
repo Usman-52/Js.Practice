@@ -1,6 +1,6 @@
 "use strict";
 
-//! SHIFT METHOD, UNSHIFT METHOD, SPLICE METHOD, SLICE METHOD
+//! SHIFT METHOD, UNSHIFT METHOD, POP, PUSH, SPLICE METHOD, SLICE METHOD
 //! SHIFT METHOD:
 //* Use the shift method to remove an element from the beginning of an array.
 
@@ -15,7 +15,7 @@
 //* To add one or more elements to the beginning of an array, use the unshift method.
 //*Inserts new elements at the start of an array, and returns the new length of the array.
 
-// var peshawarZoo = ["Lion 🦁","leopard 🐆", "Gorilla 🦍", "Monkey 🐒"];
+//var peshawarZoo = ["Lion 🦁","leopard 🐆", "Gorilla 🦍", "Monkey 🐒"];
 
 // peshawarZoo.unshift("Tiger 🐅", "Deer 🦌");  
 // console.log(peshawarZoo);    //* ['Tiger 🐅','Deer 🦌','Lion 🦁','leopard 🐆','Gorilla 🦍','Monkey 🐒'].
@@ -39,12 +39,27 @@
 
 //* OR you can just remove any element anywhere in array
 
-var spliced = myAllTimeFavoriteTeam.splice(4, 4,); //* This Statement mean that after 4 index the next 2 elements (5 = waseem & 6 = waqar) rm.
-console.log(myAllTimeFavoriteTeam);
+// var spliced = myAllTimeFavoriteTeam.splice(4, 4,); //* This Statement mean that after 4 index the next 2 elements (5 = waseem & 6 = waqar) rm.
+// console.log(myAllTimeFavoriteTeam);
+
+//pop vs splice, return type
+var pets = ["dog", "cat", "fly", "bug", "ox"];
+var spliced = pets.splice(2, 1);
+// var popped = pets.pop();
+
+// console.log(spliced);
+// console.log(popped);
+
+// sawal
+spliced.push("test");
+console.log(spliced);
 
 //! SLICE METHOD:
 //* Slice method is used to extract or replace the existing elements of the array.
 //* After extracting the elements from array then it automatically store in NEW array (sliced array).
 
+//! Example:
 
-
+// var animals = ["cat", "Monkey", "Dog", "Hen", "Got", "Gorilla"];
+// var slicedAnimals = animals.slice(3, 2);
+// console.log(slicedAnimals);
