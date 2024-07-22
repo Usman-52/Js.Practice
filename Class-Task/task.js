@@ -115,3 +115,13 @@
 // else{
 //     console.log("Sorry! you don't have sufficient balance to withdrawal.");
 // }
+
+
+
+let fruit = ["Mango", "Banana ", "Kiwifruit"];
+let favorite = prompt("What's your favorite fruit?");
+
+for( var fruitIndex = 0; fruitIndex < fruit.length; fruitIndex++) {
+    if (favorite === fruit[fruitIndex]);
+    console.log(favorite);
+}
