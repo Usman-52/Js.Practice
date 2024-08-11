@@ -57,15 +57,13 @@
 //* specifying a Date and Time
 //*Create a Date object representing the first day of the current year at midnight (00:00:00). Print the date and time in the format "YYYY-MM-DD HH:MM
 
-// var date = new Date("February 1, 2024; 00:00:00");
+// var date = new Date("January 1, 2024; 00:00:00");
 // console.log(`YYYY-MM-DD HH:MM ${date.getFullYear()}-${date.getMonth()}-${date.getDate()}-${date.getHours()}-${date.getMinutes()}`);
 
 
 //* P-No.6
 //* Changing Elements of a Date and Time
 //*Given the current date and time, add 5 days to the current date. Print the new date in the format "YYYY-MM-DD".
-
-
 
 // var currentDateTime = new Date();
 // var newDate =currentDateTime.getDate() + 5;
