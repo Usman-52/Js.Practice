@@ -55,5 +55,34 @@
 // console.log(`Global var value: ${status} & After changing: ${activate()}`)
 
 
+//* P-No.6
+// function addition(num1, num2, num3) {
+//     sum = num1 + num2 + num3; //? 12 + 10 + 9 = 31
+//     if (sum > 0) {  //?  so 31 is greater than 0 
+//     return sum;  // ? so here the function will return the sum.
+//    }
+// }
 
+// console.log(addition(12, 10, 9)) //? 31
+
+ //* P-No.7
+ 
+ //* Code a function call that has two arguments. The first argument is a variable. The second argument is another function call. 
+ //* The second function call takes the argument 10. The value returned by the first function is assigned to est, which hasn't been declared beforehand.
+
+// // Define the second function
+// function secondFunction(x) {
+//     return x * 2;
+// }
+
+// // Define the first function
+// function firstFunction(y) {
+//     return y + 5;
+// }
+
+// // Call firstFunction with the result of secondFunction(10)
+// let est = firstFunction(secondFunction(10));
+
+// // Log the result to the console
+// console.log(est);
 
