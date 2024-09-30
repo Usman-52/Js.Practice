@@ -22,17 +22,19 @@
 var studentsRecord = ["Muhammad Usman", "Sadia Afridi", "Mohib Ullah", "Kalsoom", "Muhammad Huzaifa", "Abdul Haseeb"];
 
 
-// var meet = false; //* Flag variable 
-// var searchStd = prompt("Enter Student Name:");
+var meet = false; //* Flag variable 
+var searchStd = prompt("Enter Student Name:");
 
-// for (var stdIndex = 0; stdIndex < studentsRecord.length; stdIndex++) {
-//     if (searchStd === studentsRecord[stdIndex]) {
+for (var stdIndex = 0; stdIndex < studentsRecord.length; stdIndex++) {
+    if (searchStd === studentsRecord[stdIndex]) {
         
-//         meet = true;
-//         break;  //* loopus interrupt
-//     }
+        meet = true;
+        break;  //* loopus interruptus
+    }
 
-// }
+    // console.log(studentsRecord[stdIndex])
+
+}
 
 // if(meet) {
 //     alert(`Yes, ${searchStd} is enrolled with us..`)
@@ -58,3 +60,10 @@ var studentsRecord = ["Muhammad Usman", "Sadia Afridi", "Mohib Ullah", "Kalsoom"
 // else {
 //     alert(`Yes, ${searchStd} is enrolled with us..`)
 // }
+
+//? why we used here Flag?
+//* we used flag variable (meet) because if run the program without the flag variable then the repetition
+//* in the program massage..
+
+//? why we used here ?
+//* because whenever and wherever we meet the condition the program will terminating ...
