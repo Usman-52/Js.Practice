@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 700px;
+    min-height: 700px;
+    line-height: 40px;
+}
+
+.render-img img{
+    min-width: 200px;
+    min-height: 200px;
+
+
+}
+
+input {
+    line-height: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+button {
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+}
