@@ -29,7 +29,7 @@ var studentsRecord = ["Muhammad Usman", "Sadia Afridi", "Mohib Ullah", "Kalsoom"
 //     if (searchStd === studentsRecord[stdIndex]) {
         
 //         meet = true;
-//         break;
+//         break;  //* loopus interrupt
 //     }
 
 // }
