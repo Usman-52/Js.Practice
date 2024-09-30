@@ -53,6 +53,9 @@
 //? Expression 3: 
 //* Expression 3 is executing (every time) after code block execution ( decrement or increment a variable which we creating in Expression 1)..
 
+//! Note: it first time the when loop start the first expression and second expression will be executing not 
+//! third expression. in second iteration the Expression 3 will also start executing (increment or decrement).
+
 //? Example:
 //* print numbers from 1 to 100
 
@@ -62,7 +65,7 @@
 
 // ? Same above Example:
 
-var cleanestCities = ["islamabad","abatabad", "peshawar", "murrey", "karak"];
+var cleanestCities = ["islamabad","abutabad", "peshawar", "murrey", "karak"];
 var enterYourCity = prompt("Enter your city name:");
 
 for (var cityIndex = 0; cityIndex < cleanestCities.length; cityIndex++) {
@@ -70,3 +73,39 @@ for (var cityIndex = 0; cityIndex < cleanestCities.length; cityIndex++) {
         alert(`${enterYourCity} is in the cleanest cities of pakistan`)
     }
 }
+
+//! iteration: when one time loop is called iteration.
+
+//* totalIteration: 6 {0,1,2,3,4,5}  
+// ? zero iteration (0).
+//* cityIndex = 0.
+//* cityIndex === cleanestCities.length => 0 < 5 (true).
+//* enterYourCity === cleanestCities[cityIndex] -> "peshawar"  === cleanestCities[0] -> "peshawar" ==== "islamabad" => FALSE
+
+//? 1st iteration (1).
+//* cityIndex = 1.
+//* cityIndex === cleanestCities.length => 1 < 5 (true).
+//* enterYourCity === cleanestCities[cityIndex] -> "peshawar"  === cleanestCities[1] -> "peshawar" ==== "abutabad" => FALSE
+
+//? 2nd iteration (2).
+//* cityIndex = 1.
+//* cityIndex === cleanestCities.length => 2 < 5 (true).
+//* enterYourCity === cleanestCities[cityIndex] -> "peshawar"  === cleanestCities[2] -> "peshawar" ==== "peshawar" => TRUE
+
+//? 3rd iteration (3).
+//* cityIndex = 1.
+//* cityIndex === cleanestCities.length => 3 < 5 (true).
+//* enterYourCity === cleanestCities[cityIndex] -> "peshawar"  === cleanestCities[3] -> "peshawar" ==== "murrey" => FALSE
+
+//? 4th iteration (4).
+//* cityIndex = 1.
+//* cityIndex === cleanestCities.length => 4 < 5 (true).
+//* enterYourCity === cleanestCities[cityIndex] -> "peshawar"  === cleanestCities[4] -> "peshawar" ==== "karak" => FALSE
+
+//? 5th iteration (5).
+//* cityIndex = 1.
+//* cityIndex === cleanestCities.length => 5 < 5 (false).
+//! loop will be terminated because the condition is false
+
+
+//! Note: in this program their are some issues, these problem will solve in Chapter No. 19.
