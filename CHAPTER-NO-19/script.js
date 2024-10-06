@@ -103,15 +103,28 @@
 //? Description:
 //* Create a program that takes a string input and counts how many vowels (a, e, i, o, u) it contains using a for loop.
 
-var str = "Hello Usman, How are you?";
-var vowels = "aeiouAEIOU";
-var count = 0;
+// var str = "Hello Usman, How are you?";
+// var vowels = "aeiouAEIOU";
+// var count = 0;
 
 
-for(var i = 0; i < str.length; i++ ) {
-    if(vowels.includes(str[i])) {
-        count++;
-    }
+// for(var i = 0; i < str.length; i++ ) {
+//     if(vowels.includes(str[i])) {
+//         count++;
+//     }
+// }
+
+// console.log(count)  //* 9
+
+// ? Question No.4
+//?  Factorial Calculation
+//? Description:
+//*Calculate the factorial of a given number (5!)
+var fact = [5, 4, 3, 2, 1]
+var factorial = 1;
+for(var i = 0; i < fact.length; i++) {
+    
+    factorial  = factorial * fact[i];
+    
 }
-
-console.log(count)  //* 9
+console.log(factorial)
