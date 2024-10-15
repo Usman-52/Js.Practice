@@ -120,11 +120,63 @@
 //?  Factorial Calculation
 //? Description:
 //*Calculate the factorial of a given number (5!)
-var fact = [5, 4, 3, 2, 1]
-var factorial = 1;
-for(var i = 0; i < fact.length; i++) {
+
+// var fact = [5, 4, 3, 2, 1] //* 5!
+// var factorial = 1;
+// for(var i = 0; i < fact.length; i++) {
     
-    factorial  = factorial * fact[i];
+//     factorial  = factorial * fact[i];
     
+// }
+// console.log(factorial)
+
+//? OR
+
+
+// var factorial = 1;
+// for(var i = 1; i <= 5; i++) {
+    
+//     factorial  = factorial * i;
+    
+// }
+// console.log(factorial)
+
+// ? Question No.5
+//?  Reverse a String:
+//? Description:
+//* Given a string, reverse the order of its characters using a for loop. 
+//*You will iterate through the string starting from the last character and build the reversed string
+
+// var str = "pocket money";
+// var revStr = "";
+// for (var i = str.length -1; i >= 0; i--) {
+//     revStr += str[i];
+// }
+// console.log(revStr)
+
+// ? Question No.6
+//?  Print Multiplication Table:
+//? Description:
+//* Write a program to print the multiplication table (from 1 to 10) for a given number. 
+//* Use a for loop to multiply the given number by values from 1 to 10.
+
+// var  number = +prompt("Please Enter any number:")
+// for (var i = 1; i < 10; i++) {
+//     console.log(`${number} x ${i} = ${number * i}`);
+// }
+
+
+// ? Question No.7
+//?  Fibonacci Series:
+//? Description:
+//* Print the first N numbers of the Fibonacci series (where each number is the sum of the previous two numbers). 
+//* The first two numbers are 0 and 1.
+
+let n = 10;
+let a = 0, b = 1, next;
+for (var i = 2; i < n; i++) {
+    next = a + b;
+    console.log(`${a} + ${b} = ${next}`)
+    a = b;
+    b = next;
 }
-console.log(factorial)
