@@ -69,9 +69,33 @@
 
 //* Rest parameter
 
-const Arry = ["usman", 30 , "ehllo", ["faisal", 20, "hello"], ["faisal", 20, "hello"], ["faisal", 20, "hello"] ]
+//? write a function that takes any number of arguments and returns the sum of only the even numbers provided?
+//? Use the rest parameter to handle the arguments.
 
-console.log(Arry.flat())
+// let sumOfEvenNumbers = (...args) => {
+//     console.log(args)             //* show us the arguments in Arry
+//     let sum = 0;
+    
+//     for(let num of args) {
+//         if(num % 2 === 0){
+//             sum += num;
+//         }
+        
+//     }
+//     console.log(`Sum of the Even number is : ${sum}`);
+// }
+// sumOfEvenNumbers(23, 22, 1, 2, 4, 10)
 
+//? Create a function that accepts a student’s name, age, and any number of hobbies as arguments. Use the rest parameter to collect the hobbies and return an object with all the details.
 
+let person = (name, age, ...hubbies) => {
+    console.log( name, age, hubbies);
+    return  {
+        name: name,
+        age: age,
+        hubbies: hubbies
+    }
+    
+}
+console.log(person("Usman", 21, "Cricket", "Cooking", "Running"));
 
