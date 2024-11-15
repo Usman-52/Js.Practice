@@ -88,14 +88,58 @@
 
 //? Create a function that accepts a student’s name, age, and any number of hobbies as arguments. Use the rest parameter to collect the hobbies and return an object with all the details.
 
-let person = (name, age, ...hubbies) => {
-    console.log( name, age, hubbies);
-    return  {
-        name: name,
-        age: age,
-        hubbies: hubbies
+// let person = (name, age, ...hubbies) => {
+//     // console.log( name, age, hubbies);
+//     return  {
+//         name: name,
+//         age: age,
+//         hubbies: hubbies
+//     }
+    
+// }
+// console.log(person("Usman", 21, "Cricket", "Cooking", "Running"));
+
+//? Spread Parameter
+
+
+//* You have two arrays of numbers, array1 and array2.
+//* Write code that combines them into a single array, removes duplicate values, and sorts them in ascending order using the spread operator.
+
+let arry1 = [1, 3, 2, 5, 8, 10]
+let arry2 = [2, 14, 6, 9, 11, 7]
+let newArry = [...arry1, ...arry2]
+let uniqArry = []
+for(let num of newArry) {
+    if(!uniqArry.includes((num))){
+        uniqArry.push(num)
     }
+}
+// console.log(uniqArry.sort((arry1, arry2) => arry1 - arry2));
+
+
+
+
+//*  Given an object with default settings for an application,
+//* write a function that accepts a new settings object. Use the spread operator to return a single settings object, where new settings overwrite the defaults, but unspecified settings retain their default values.
+
+let defaultObj = {
+    name: "Muhammad Usman",
+    age: 21,
+    profession: "web developer",
+    hubbies: ["Cricket", "Cooking", "Running"]
+}
+
+let newSettings = () => {
+    let newSetting = {
+        name: "S.Afridi",
+        age: 20,
+        profession: "web developer",
+        hubbies: ["Watching Cricket", "Cooking"]
+    }
+
+    const mergedSetting = {...defaultObj, ...newSetting}
+    return mergedSetting;
     
 }
-console.log(person("Usman", 21, "Cricket", "Cooking", "Running"));
 
+console.log(newSettings());
