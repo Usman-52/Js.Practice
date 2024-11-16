@@ -26,3 +26,10 @@ let numToBoolean = Boolean(num)
 // console.log(numToBoolean); //* output will come true cause 1 = true and 0 = false
 // console.log(typeof numToBoolean); //* the Type will be boolean
 
+//*============================== Operations ==================================//
+
+console.log(2 + 3) //* 5
+console.log("2" + 3) //* 23
+console.log(2 + "3") //* 23
+console.log("1" + 2 + 1) //* 121
+console.log(1 + 2 + "1"); //* 31 (1 + 2 will first add then concat 1 with 3)
