@@ -13,7 +13,7 @@
 //* Convert an array of strings to uppercase.
 
 // let stdNames = ["khan", "Saad", "Mansoor"]
-// let newStdName = stdNames.map()
+// let newStdName = stdNames.map(el => el.toUpperCase())
 // console.log(newStdName);
 
 
@@ -62,7 +62,7 @@
 
 // let names = ["usman", "khan", "khattak", "Muhammad", "Haseeb", "Afnan"]
 // // let names = ['b', "c", "a", "h", "e"]
-// let sorted = names.sort()
+// let sorted = names.sort((a, b) => a < b ? -1 : 1);
 // console.log(sorted);
 
 
@@ -185,7 +185,7 @@
 //* Example Input: [4, 10, 15, 20]
 //* Expected Output: 2
 
-// let index = [4, 10, 15, 20];
+// let index = [4, 10, 8, 20];
 // let findIndex = index.findIndex((num) => num % 3 === 0);
 // console.log(findIndex);
 
