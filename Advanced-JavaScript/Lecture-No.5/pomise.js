@@ -23,38 +23,112 @@
 
 //? Example:
 
-let promise1 = new Promise(function(resolve, reject) {
-    setTimeout(() => {
-        console.log("Async is completed!");
-        resolve();
-    },1000)
-});
-promise1.then(() => {
-    console.log("Promise is used");
-})
+// let promise1 = new Promise(function(resolve, reject) {
+//     setTimeout(() => {
+//         console.log("Async is completed!");
+//         resolve();
+//     },1000)
+// });
+// promise1.then(() => {
+//     console.log("Promise is used");
+// })
 
 //* OR
 
 
 
-new Promise( (resolve, reject) => {
-    setTimeout( () => {
-        console.log("Async No.2 is completed!");
-        resolve()
-    }, 3000)
-}).then( () => console.log("Task is resolved"))
+// new Promise( (resolve, reject) => {
+//     setTimeout( () => {
+//         console.log("Async No.2 is completed!");
+//         resolve()
+//     }, 3000)
+// }).then( () => console.log("Task is resolved"))
 
 //?=============================== Passing data into Resolve ===============================//
 
 
-let promise3 = new Promise( (resolve, reject) => {
-    setTimeout( () =>{
-        resolve({userName:"Muhammad Usman", userEmail: "dove663@gmail.come"})
-    }, 2000)
+// let promise3 = new Promise( (resolve, reject) => {
+//     setTimeout( () =>{
+//         resolve({userName:"Muhammad Usman", userEmail: "dove663@gmail.come"})
+//     }, 2000)
+// })
+// promise3.then( (userData) => {
+//     console.log(userData);
+// })
+
+//?============================ Promise using Catch and final ==============================//
+
+// let promise4 = new Promise ( (resolve, reject) => {
+//     let error = false //* Simulating an error condition
+//     if (!error){
+//          //* If there's an error, reject the promise with an error message
+//         resolve ({userEmail: "dove663@gmail.com" , userPassword: 1234}) 
+//     }else{
+//          //* If there's an error, reject the promise with an error message
+//         reject("Sorry! Something Went Wrong")
+//     }
+// }, 2000)
+
+// //* // Access and return the user's email from the resolved object The first `then` runs when the promise is resolved successful
+
+// promise4.then( (userRecord) => {
+//     return userRecord.userEmail //* Access and return the user's email from the resolved object
+// })
+// .then( (userEmail) =>{
+//      //* The second `then` receives the returned value (user's email) from the previous `then`
+//     console.log(`User Email: ${userEmail}`);
+// })
+// .catch( (error) => {
+//     console.log(`Error: ${error}`);           //* The `catch` block runs when the promise is rejected and handles the error
+// })
+// .finally(() => {
+    
+//     console.log("Promise has been handled.");   //* Executes regardless of resolve or reject
+// });
+
+//?================================== Using Async Await ==============================//
+
+let promise5 = new Promise( (resolve, reject) => {
+    let error = false
+    if (!error) {
+        resolve(fetch('https://dummyjson.com/users'))
+    }
+    else{
+        reject("Sorry! something went Wrong.")
+    }
+}, 2000)
+
+.then( (response) => {
+    return response.json()
+}).then( (data) => {
+    console.log(data)
+}).catch((error) => {
+    console.log(error);
 })
-promise3.then( (userData) => {
-    console.log(userData);
+
+
+async function record() {
+    let response = await fetch('https://dummyjson.om/users')
+    return response.json()
+}
+
+record().then( (data) => {
+    console.log(data);
+}).catch( (error) => {
+console.log(error.message)
+});
+
+
+
+async function record() {
+    try {
+        let response = await fetch('https://dummyjson.com/users')
+    return response.json()
+    } catch (error) {
+        console.log(error.message)
+    }
+}
+
+record().then( (data) => {
+    console.log(data);
 })
-
-
-
