@@ -1,4 +1,37 @@
 "use strict";
+//?========================================= Callback Hell Functions =======================================//
+ //* What's is Callback Hell ?
+
+ //* callback hell is also called nest Callback function, which stacked below one another , forming a pyramid structure (pyramid of Doom)
+
+ //* this style of programming becomes difficult to understand & manage.
+
+ //? Example:
+
+//*  we have need to print the data after some sort of time
+
+// let printData = (data, nextData) => {
+//     setTimeout( () => {
+//         console.log(data);
+//         if(nextData){
+//             nextData()
+//         }
+//     },2000)
+//     return data
+// }
+
+// printData(100, () => {
+//     console.log("Getting Data2....");
+//     printData(200, () => {
+//         console.log("Getting Data3....");
+//         printData(300, () =>{
+//             console.log("Getting Data4....");
+//             printData(400)
+//         })
+//     })
+// })
+
+//! Note: it's very complicated to understand so Promise comes in javaScript
 //?========================================= Promise =======================================//
 
 
@@ -86,49 +119,82 @@
 //     console.log("Promise has been handled.");   //* Executes regardless of resolve or reject
 // });
 
-//?================================== Using Async Await ==============================//
+//?================================== Call API using Promise and Fetch ==============================//
 
-let promise5 = new Promise( (resolve, reject) => {
-    let error = false
-    if (!error) {
-        resolve(fetch('https://dummyjson.com/users'))
-    }
-    else{
-        reject("Sorry! something went Wrong.")
-    }
-}, 2000)
+// let promise5 = new Promise( (resolve, reject) => {
+//     let error = true
+//     if (!error) {
+//         resolve(fetch('https://dummyjson.com/users'))
+//     }
+//     else{
+//         reject("Sorry! something went Wrong.")
+//     }
+// }, 2000)
 
-.then( (response) => {
-    return response.json()
-}).then( (data) => {
-    console.log(data)
-}).catch((error) => {
-    console.log(error);
-})
+// .then( (response) => {
+//     return response.json()
+// }).then( (data) => {
+//     console.log(data)
+// }).catch((error) => {
+//     alert(error)
+// })
+
+//!=================================== Async ===============================================//
+
+//? What's Synchronous ?
+//* Synchronous means the code runs in a particular sequence of instructions given in the program.
+//* Each instruction waits for the previous to complete it's execution.
+
+//? Example:
+
+// console.log(100); //* first 100 will print 
+// console.log(200); //* 2nd 200 will print
+// console.log(300); //* 3rd 300 will print 
+
+//* Each instruction will wait for upper instruction to execute then the next will execute, even the upper get delay the next will also waiting for the upper to execute.
 
 
-async function record() {
-    let response = await fetch('https://dummyjson.om/users')
-    return response.json()
-}
+//? What is Asynchronous ?
+//* Due to synchronous programming , sometimes important instructions get blocked (waite) due to some previous instructions, which causes a delay in UI.
 
-record().then( (data) => {
-    console.log(data);
-}).catch( (error) => {
-console.log(error.message)
-});
+//* Asynchronous code execution allows to execute next instructions immediately and doesn't block the flow.
+
+// ? Example:
+
+// console.log(100); //* here 1st 100 will print
+
+//* it's Async so the other instruction don't need to wait for it to execute so 200 print on 3rd number not on second number.
+
+// setTimeout(() => {  
+//     console.log(200); 
+// },5000)
+
+// console.log(300); //* 2nd 300 will print 
 
 
 
-async function record() {
-    try {
-        let response = await fetch('https://dummyjson.com/users')
-    return response.json()
-    } catch (error) {
-        console.log(error.message)
-    }
-}
+// async function record() {
+//     let response = await fetch('https://dummyjson.om/users')
+//     return response.json()
+// }
 
-record().then( (data) => {
-    console.log(data);
-})
+// record().then( (data) => {
+//     console.log(data);
+// }).catch( (error) => {
+// console.log(error.message)
+// });
+
+//* OR:
+
+// async function record() {
+//     try {
+//         let response = await fetch('https://dummyjson.com/users')
+//     return response.json()
+//     } catch (error) {
+//         console.log(error.message)
+//     }
+// }
+
+// record().then( (data) => {
+//     console.log(data);
+// })
