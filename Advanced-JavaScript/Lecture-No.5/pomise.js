@@ -186,15 +186,15 @@
 
 //* OR:
 
-// async function record() {
-//     try {
-//         let response = await fetch('https://dummyjson.com/users')
-//     return response.json()
-//     } catch (error) {
-//         console.log(error.message)
-//     }
-// }
+async function record() {
+    try {
+        let response = await fetch('https://dummyjson.com/users')
+    return response.json()
+    } catch (error) {
+        console.log(error.message)
+    }
+}
 
-// record().then( (data) => {
-//     console.log(data);
-// })
+record().then( (data) => {
+    console.log(data);
+})
