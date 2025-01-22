@@ -16,22 +16,22 @@
 //  }
  
 //  else{
-//     alert("invilide color")
+//     alert("invalid color")
 //  }
 
 
-var shoping_Amount = +prompt("Enter the Shaping Amount");
+var shaping_Amount = +prompt("Enter the Shaping Amount");
 
-if(shoping_Amount <= 4999){
+if(shaping_Amount <= 4999){
    alert("your discount is 10%")
 }
 
-else if(shoping_Amount <= 9999){
-   alert("you have 25% discont")
+else if(shaping_Amount <= 9999){
+   alert("you have 25% discount")
 
 }
 
-else if(shoping_Amount >= 10000){
+else if(shaping_Amount >= 10000){
    alert("you have 50% discount")
 }
 
