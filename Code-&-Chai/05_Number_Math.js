@@ -23,9 +23,9 @@
 
 // console.log(Math.abs(-10)); //* it'll convert negative value to positive
 
-let myBalance = 13.5002
-console.log(Math.floor(myBalance));
+// let myBalance = 13.5002
+// console.log(Math.floor(myBalance));
 
 //* if next number to the decimal point at left side is 5 or greater than five then the right side of decimal value would be "GET INCREASE BY 1" 
 //* if less than 1 then it'll increase
-console.log(Math.round(myBalance)); 
+// console.log(Math.round(myBalance));

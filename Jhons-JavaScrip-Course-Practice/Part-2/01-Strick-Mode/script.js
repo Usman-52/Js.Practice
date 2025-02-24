@@ -8,9 +8,21 @@
 
 //* For Example:
 
-let check = "Are you boy";
-if chek
+// const massage = prompt("please write your massage!")
+// let lengthOfYourMassage = massage.length()
 
+// // // alert(`You have entered ${lengthOfYourMassage} and you have remaining ${280 - lengthOfYourMassage}`)
+// alert(lengthOfYourMassage)
+
+
+
+// var massage = prompt("Enter your Name")
+// var sliced = massage.slice(0, 1)
+// sliced = sliced.toUpperCase()
+// massage = massage.toLocaleUpperCase()
+// var spliced =
+
+// alert(sliced)
 
 
 
