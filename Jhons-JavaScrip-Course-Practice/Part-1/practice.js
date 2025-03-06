@@ -158,6 +158,25 @@
 //* Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 //* Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
-const averageOfDolphins = (96 + 108 + 89) / 3;
-const averageOfKoalas = (88 + 95 + 110) / 3;
-console.log(`The average fo Dolphins is: ${averageOfDolphins.toFixed(0)} and the average of Koalas is: ${averageOfKoalas.toFixed(0)} so The Match is Draw: ${(averageOfDolphins <= averageOfKoalas)}`);
+// const averageOfDolphins = (96 + 108 + 89) / 3;
+// const averageOfKoalas = (88 + 95 + 110) / 3;
+// console.log(`The average fo Dolphins is: ${averageOfDolphins.toFixed(0)} and the average of Koalas is: ${averageOfKoalas.toFixed(0)} so The Match is Draw: ${(averageOfDolphins <= averageOfKoalas)}`);
+
+//* Data Bonus 1:
+// const dolphinsScore = 97 + 112 + 101
+// const koalasScore = 109 + 95 + 123
+
+//* Data Bonus 2:
+const dolphinsScore = 97 + 112 + 101
+const koalasScore = 109 + 95 + 106
+
+
+if (dolphinsScore < koalasScore) {
+    console.log(`Koalas won the match`)
+}else if(dolphinsScore > koalasScore) {
+    console.log(`Dolphins won the `)
+}else {
+    console.log('the match is draw')
+}
+
+
