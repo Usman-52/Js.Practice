@@ -7,7 +7,7 @@
 
 // let usman = false;
 // const hello = true;
-// if (hello) uman = true;
+// if (hello) usman = true;
 // if (usman) console.log('hello usman');
 
 //* in the above example you can see that the variable usman in incorrect in the first if statement but if You can run,
@@ -54,7 +54,7 @@
 //* Test the function with the following names: "Khuzaifa", "Bilal", and "Khan lala".
 
 // function yourName(name) {
-//     console.log(`Aslam.o.Alikom ${name}`);
+//     console.log(`Asalam.o.Alikom ${name}`);
 // }
 
 // yourName("Muhammad Usman");
@@ -171,12 +171,14 @@ const dolphinsScore = 97 + 112 + 101
 const koalasScore = 109 + 95 + 106
 
 
-if (dolphinsScore < koalasScore) {
-    console.log(`Koalas won the match`)
-}else if(dolphinsScore > koalasScore) {
-    console.log(`Dolphins won the `)
-}else {
-    console.log('the match is draw')
-}
+// if (dolphinsScore < koalasScore && koalasScore >= 100) {
+//     console.log(`Koalas won the  🏆`)
+// }else if(dolphinsScore > koalasScore && dolphinsScore >= 100) {
+//     console.log(`Dolphins won the  🏆`)
+// }else if( dolphinsScore === koalasScore && dolphinsScore >= 100 && koalasScore >= 100){
+//     console.log('Both teams ae the winner of 🏆 ') 
+// } else{
+//     console.log("No one won the 🦒🏆" )
+// }
 
 
